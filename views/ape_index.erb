@@ -1,7 +1,39 @@
-Hello apes
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API - Apelication Programming Interface</title>
+</head>
+<body>
+ <div style='width:90%; margin: 0 auto; font-family: "Arial", sans-serif'>
 
-<% APES.each do |ape| %>
-  <h2><%=ape[:name] %></h2>
-  <img src="<%=ape[:photo] %>" height='200'/>
+    <h1>Sample Ape-E-I</h1>
 
-<% end %>
+    <% read_apes.each_with_index do |ape, number| %>
+      <h2><%=ape['name'] %></h2>
+      <a href="/apes/<%=number + 1 %>"><img src="<%=ape['photo'] %>" height='200'/></a>
+
+    <% end %>
+
+    <br/>
+    <br/>
+
+    <h3>New Ape</h3>
+
+    <form action="/apes" method="POST">
+      <label>
+        Name
+        <input type="text" name="name"/>
+      </label>
+      <br/>
+      <label>
+        Photo
+        <input type="text" name="photo"/>
+      </label>
+      <br/>
+      <button>Submit</button>
+    </form>
+
+  </div>
+
+</body>
+</html>

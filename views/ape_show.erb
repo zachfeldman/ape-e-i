@@ -1,0 +1,21 @@
+Hello Ape!
+
+<h2><%=@ape['name'] %></h2>
+<img src="<%=@ape['photo'] %>" height='200'/>
+
+<h3>Apedate</h3>
+
+<form action="/apes/<%=params[:ape_number]%>" method="POST">
+  <label>
+    Name
+    <input type="text" value="<%=@ape['name'] %>" name="name"/>
+  </label>
+  <br/>
+  <label>
+    Photo
+    <input type="text" value="<%=@ape['photo'] %>" name="photo"/>
+  </label>
+  <br/>
+  <input type="hidden" name="_method" value="put" />
+  <button>Submit</button>
+</form>
