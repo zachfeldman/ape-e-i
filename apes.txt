@@ -1,0 +1,12 @@
+Name: Ape 1
+Photo: https://i.natgeofe.com/n/fb06a623-59be-4185-99a3-d63009a033d3/chimpanzee_thumb_4x3.JPG
+
+---
+
+Name: Ape 2
+Photo: https://media.npr.org/assets/img/2015/10/08/istock_000013696787_small-40f929a109f759d798fc1d8afc718cc78a2ac18b-s1100-c50.jpg
+
+---
+
+Name: Ape 3
+Photo: https://cloudfront-us-east-2.images.arcpublishing.com/reuters/5QMUX5DWNNNMBPGNTGZDAQCIRE.jpg
