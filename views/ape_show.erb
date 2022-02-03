@@ -1,21 +1,33 @@
-Hello Ape!
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API - Apelication Programming Interface</title>
+</head>
+<body>
+ <div style='width:90%; margin: 0 auto; font-family: "Arial", sans-serif'>
 
-<h2><%=@ape['name'] %></h2>
-<img src="<%=@ape['photo'] %>" height='200'/>
+    <h1>Hello Ape!</h1>
 
-<h3>Apedate</h3>
+    <h2><%=@ape['name'] %></h2>
+    <img src="<%=@ape['photo'] %>" height='200'/>
 
-<form action="/apes/<%=params[:ape_number]%>" method="POST">
-  <label>
-    Name
-    <input type="text" value="<%=@ape['name'] %>" name="name"/>
-  </label>
-  <br/>
-  <label>
-    Photo
-    <input type="text" value="<%=@ape['photo'] %>" name="photo"/>
-  </label>
-  <br/>
-  <input type="hidden" name="_method" value="put" />
-  <button>Submit</button>
-</form>
+    <h3>Apedate</h3>
+
+    <form action="/apes/<%=params[:ape_number]%>" method="POST">
+      <label>
+        Name
+        <input type="text" value="<%=@ape['name'] %>" name="name"/>
+      </label>
+      <br/>
+      <label>
+        Photo
+        <input type="text" value="<%=@ape['photo'] %>" name="photo"/>
+      </label>
+      <br/>
+      <input type="hidden" name="_method" value="put" />
+      <button>Submit</button>
+    </form>
+
+  </div>
+</body>
+</html>
